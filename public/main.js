@@ -52,8 +52,8 @@ function flipCoins() {
             // Graphically display all results in the details table.
             var detailsTableBody = document.getElementById("realresults");
             detailsTableBody.innerHTML = result.raw;
-            document.getElementById("heads").innerHTML = result.summary.heads == undefined ? "heads: " + 0.toString() : "heads: " + result.summary.heads.toString()
-            document.getElementById("tails").innerHTML = result.summary.tails == undefined ? "tails: " + 0.toString() : "tails: " + result.summary.tails.toString()
+            document.getElementById("heads").innerHTML = result.summary.heads == undefined ? "heads: 0" : "heads: " + result.summary.heads.toString()
+            document.getElementById("tails").innerHTML = result.summary.tails == undefined ? "tails: 0" : "tails: " + result.summary.tails.toString()
         })
 }
 
